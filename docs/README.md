@@ -5,11 +5,11 @@
 - [x] 게임을 시작한다. - OutputView#startGame
 
 
-- [x] 1부터 9까지 서로 다른 수로 이루어진 3자리의 수를 생성한다. - Computer#createComputerNum
+- [x] 1부터 9까지 서로 다른 수로 이루어진 3자리의 수를 생성한다. - Computer
 
 
 - [x] 플레이어로부터 숫자를 입력 받는다. - InputView#readPlayerNum
-    - [x] 입력값을 검증한다. - ValidateNumber#validatePlayerNum
+    - [x] 입력값을 검증한다. - ValidateNumber#validateNum
         - [x] 아래의 경우 IllegalArgumentException 예외를 발생시킨다.
             - [x] 서로 다른 값이 아닌 경우
             - [x] 숫자가 3개가 아닌 경우
