@@ -7,7 +7,7 @@ public class ValidateInput {
 
     public final static String ERROR_MESSAGE = "[ERROR] ";
 
-    public static void validatePlayerNum(String playerNum) throws IllegalArgumentException {
+    public static List<Integer> validatePlayerNum(String playerNum) throws IllegalArgumentException {
         List<Integer> player=new ArrayList<Integer>();
 
         for(int i=0;i<playerNum.length();i++){
@@ -24,5 +24,13 @@ public class ValidateInput {
                 throw new IllegalArgumentException(ERROR_MESSAGE + "1부터 9까지의 숫자를 입력해야 합니다.");
             }
         }
+        return player;
+    }
+
+    public static int validateCommand(String command) {
+        if(!(command.equals("1")||command.equals("2"))){
+            throw new IllegalArgumentException(ERROR_MESSAGE + "1또는 2를 입력해야 합니다.");
+        }
+        return Integer.parseInt(command);
     }
 }
