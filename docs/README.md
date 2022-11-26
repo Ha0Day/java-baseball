@@ -15,10 +15,10 @@
 - [ ] 컴퓨터의 수와 플레이어의 수를 비교한다.
     - [x] 일치하는 숫자의 개수를 확인한다. - Judge#countSameNumber
     - [x] 일치하는 숫자의 자리를 확인한다. - Judge#comparePosition
-    - [ ] 결과를 출력한다. - OutputView#printResult
-        - [ ] 일치하는 숫자의 개수가 0이면 낫싱 출력
-        - [ ] 일치하는 숫자가 다른 자리에 있으면 볼 출력
-        - [ ] 일치하는 숫자가 같은 자리에 있으면 스트라이크 출력
+    - [x] 결과를 출력한다. - OutputView#printResult
+        - [x] 일치하는 숫자의 개수가 0이면 낫싱 출력
+        - [x] 일치하는 숫자가 다른 자리에 있으면 볼 출력
+        - [x] 일치하는 숫자가 같은 자리에 있으면 스트라이크 출력
 
 - [ ] 게임이 끝난 경우 재시작/종료 여부를 입력 받는다. - InputView#readCommand
     - 잘못된 값을 입력할 경우 IllegalArgumentException 예외 발생 - ValidateNumber#validateCommand
