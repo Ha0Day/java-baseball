@@ -26,7 +26,7 @@ public class ValidateInput {
                 throw new IllegalArgumentException(ERROR_MESSAGE + "1부터 9까지의 숫자를 입력해야 합니다.");
             }
         }
-        return player;
+        return number;
     }
 
     public static String validateCommand(String command) {
