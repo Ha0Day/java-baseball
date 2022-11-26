@@ -23,5 +23,9 @@ public class Judge {
             }
         }
         OutputView.printResult(count, strike);
+        if (strike == 3) {
+            Application.retry = false;
+            InputView.readCommand();
+        }
     }
 }
