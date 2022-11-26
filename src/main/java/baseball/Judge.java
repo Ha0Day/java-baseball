@@ -4,9 +4,12 @@ import java.util.List;
 
 public class Judge {
 
+    public final static int SIZE = 3;
+    public final static int SUCCESS = 3;
+
     public void countSameNumber(List<Integer> computer, List<Integer> player) {
         int count = 0;
-        for (int i = 0; i < computer.size(); i++) {
+        for (int i = 0; i < SIZE; i++) {
             if (computer.contains(player.get(i))) {
                 count++;
             }
@@ -15,15 +18,14 @@ public class Judge {
     }
 
     public void comparePosition(List<Integer> computer, List<Integer> player, int count) {
-
         int strike = 0;
-        for (int i = 0; i < computer.size(); i++) {
+        for (int i = 0; i < SIZE; i++) {
             if (computer.get(i).equals(player.get(i))) {
                 strike++;
             }
         }
         OutputView.printResult(count, strike);
-        if (strike == 3) {
+        if (strike == SUCCESS) {
             Application.retry = false;
             InputView.readCommand();
         }

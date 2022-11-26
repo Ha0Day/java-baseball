@@ -7,15 +7,12 @@ import java.util.List;
 
 public class Computer {
 
+    public final static int SIZE = 3;
     private List<Integer> computer;
 
     Computer() {
-        createComputerNum();
-    }
-
-    private void createComputerNum() {
         computer = new ArrayList<>();
-        while (computer.size() < 3) {
+        while (computer.size() < SIZE) {
             int randomNumber = Randoms.pickNumberInRange(1, 9);
             if (!computer.contains(randomNumber)) {
                 computer.add(randomNumber);
