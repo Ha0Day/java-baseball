@@ -14,7 +14,7 @@
 
 - [ ] 컴퓨터의 수와 플레이어의 수를 비교한다.
     - [x] 일치하는 숫자의 개수를 확인한다. - Judge#countSameNumber
-    - [ ] 일치하는 숫자의 자리를 확인한다. - Judge#comparePosition
+    - [x] 일치하는 숫자의 자리를 확인한다. - Judge#comparePosition
     - [ ] 결과를 출력한다. - OutputView#printResult
         - [ ] 일치하는 숫자의 개수가 0이면 낫싱 출력
         - [ ] 일치하는 숫자가 다른 자리에 있으면 볼 출력
