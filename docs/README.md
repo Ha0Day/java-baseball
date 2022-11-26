@@ -13,7 +13,7 @@
         - [x] 1부터 9까지의 숫자가 아닌 경우
 
 - [ ] 컴퓨터의 수와 플레이어의 수를 비교한다.
-    - [ ] 일치하는 숫자의 개수를 확인한다. - Judge#countSameNumber
+    - [x] 일치하는 숫자의 개수를 확인한다. - Judge#countSameNumber
     - [ ] 일치하는 숫자의 자리를 확인한다. - Judge#comparePosition
     - [ ] 결과를 출력한다. - OutputView#printResult
         - [ ] 일치하는 숫자의 개수가 0이면 낫싱 출력
